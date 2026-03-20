@@ -52,17 +52,26 @@ mlops-project/
 │   │   │   ├── main.py             # Точка входа, lifespan, метрики
 │   │   │   ├── api/routes.py       # POST /api/v1/predict
 │   │   │   ├── core/config.py      # Pydantic Settings
-│   │   │   ├── db/                 # AsyncSession, Base
+│   │   │   ├── db/                 # AsyncSession (session.py), Base (base.py)
 │   │   │   ├── models/             # SQLAlchemy-модель PredictionLog
-│   │   │   ├── schemas/            # Pydantic-схемы запроса/ответа
-│   │   │   └── services/           # Бизнес-логика предсказания и логирования
-│   │   ├── alembic/                # Миграции БД
+│   │   │   ├── schemas/            # Pydantic-схемы (predict.py)
+│   │   │   └── services/           # model.py, prediction_log.py
+│   │   ├── alembic/                # Миграции БД (env.py, versions/)
+│   │   ├── alembic.ini             # Конфигурация Alembic
 │   │   ├── Dockerfile
 │   │   └── requirements.txt
-│   ├── airflow/                    # Airflow + демо-DAG
+│   ├── airflow/                    # Airflow
+│   │   ├── Dockerfile
+│   │   └── dags/
+│   │       └── demo_ml_pipeline.py # Демо-DAG для ML-пайплайна
 │   ├── mlflow/                     # MLflow Tracking Server
+│   │   └── Dockerfile
 │   ├── jupyterhub/                 # JupyterHub + JupyterLab
+│   │   ├── Dockerfile
+│   │   └── jupyterhub_config.py    # Конфигурация JupyterHub
+│   ├── lakefs/                     # LakeFS (конфигурация через docker-compose)
 │   └── postgres/init/              # SQL-скрипт инициализации БД
+│       └── 01-init-databases.sql
 ├── monitoring/
 │   └── prometheus.yml              # Конфигурация Prometheus
 ├── k8s/                            # Kubernetes-манифесты
@@ -73,13 +82,32 @@ mlops-project/
 │   ├── Chart.yaml
 │   ├── values.yaml
 │   └── templates/
+│       ├── _helpers.tpl            # Вспомогательные шаблоны
+│       ├── deployment.yaml
+│       ├── service.yaml
+│       └── ingress.yaml
 ├── prompts/                        # Версионированные промпты
 │   ├── prompt_v1.txt
 │   ├── prompt_v2.txt
 │   └── prompt_v3.txt
 ├── tests/                          # Тесты
 │   └── test_mlflow.py
+├── screenshots/                    # Скриншоты работающих сервисов
+│   ├── airflow.png, airflow_dag.png
+│   ├── grafana1-3.png
+│   ├── helm1-2.png, kubernetes.png
+│   ├── jupyter.png, lakefs.png, lakefs2.png
+│   ├── minio.png, mlflow.png
+│   ├── ml_service.png, ml_service2.png
+│   ├── prometheus.png
+│   └── promts.png
 └── logs/                           # Логи сервисов
+    ├── airflow.txt
+    ├── grafana.txt
+    ├── jupyterhub.txt
+    ├── LakeFS.txt
+    ├── MLflow.txt
+    └── ml_service.txt
 ```
 
 ## Быстрый старт
