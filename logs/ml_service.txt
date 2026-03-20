@@ -1,0 +1,28 @@
+dataops-ml-service  | INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+dataops-ml-service  | INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+dataops-ml-service  | INFO  [alembic.runtime.migration] Will assume transactional DDL.
+dataops-ml-service  | INFO  [alembic.runtime.migration] Will assume transactional DDL.
+dataops-ml-service  | INFO  [alembic.runtime.migration] Running upgrade  -> 0001_create_prediction_log, create prediction log table
+dataops-ml-service  | INFO  [alembic.runtime.migration] Running upgrade  -> 0001_create_prediction_log, create prediction log table
+dataops-ml-service  | INFO:     Started server process [10]
+dataops-ml-service  | INFO:     Waiting for application startup.
+dataops-ml-service  | INFO:     Application startup complete.
+dataops-ml-service  | INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+dataops-ml-service  | INFO:     138.68.11.125:43695 - "GET /docs HTTP/1.1" 200 OK
+dataops-ml-service  | INFO:     138.68.11.125:43695 - "GET /openapi.json HTTP/1.1" 200 OK
+dataops-ml-service  | INFO:     138.68.11.125:39767 - "POST /api/v1/predict HTTP/1.1" 422 Unprocessable Entity
+dataops-ml-service  | INFO:     138.68.11.125:48913 - "GET /docs HTTP/1.1" 200 OK
+dataops-ml-service  | INFO:     138.68.11.125:48913 - "GET /openapi.json HTTP/1.1" 200 OK
+dataops-ml-service  | INFO:     138.68.11.125:48913 - "GET /predict HTTP/1.1" 404 Not Found
+dataops-ml-service  | INFO:     138.68.11.125:48913 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+dataops-ml-service  | INFO:     138.68.11.125:40215 - "GET /api/v1/predict HTTP/1.1" 405 Method Not Allowed
+dataops-ml-service  | INFO:     138.68.11.125:30588 - "GET /metrics HTTP/1.1" 200 OK
+dataops-ml-service  | INFO:     138.68.11.125:42228 - "GET /docs HTTP/1.1" 200 OK
+dataops-ml-service  | INFO:     138.68.11.125:42228 - "GET /openapi.json HTTP/1.1" 200 OK
+dataops-ml-service  | INFO:     138.68.11.125:61179 - "GET /docs HTTP/1.1" 200 OK
+dataops-ml-service  | INFO:     138.68.11.125:61179 - "GET /openapi.json HTTP/1.1" 200 OK
+dataops-ml-service  | INFO:     138.68.11.125:61179 - "GET / HTTP/1.1" 404 Not Found
+dataops-ml-service  | INFO:     138.68.11.125:61179 - "GET /metrics HTTP/1.1" 200 OK
+dataops-ml-service  | INFO:     138.68.11.125:49434 - "GET /openapi.json HTTP/1.1" 200 OK
+dataops-ml-service  | {"event": "prediction", "input": {"feature1": 1.0, "feature2": 2.0, "feature3": 3.0}, "output": {"prediction": 0.9}, "model_version": "demo-model-1.0.0", "duration_ms": 0.2}
+dataops-ml-service  | INFO:     138.68.11.125:49535 - "POST /api/v1/predict HTTP/1.1" 200 OK

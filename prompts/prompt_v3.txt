@@ -1,0 +1,7 @@
+Version: v3
+Name: sentiment-classifier
+Prompt:
+Analyze the text tone.
+Choose one label: positive, neutral, negative.
+Return strict JSON: {"label": "...", "confidence": 0.0}
+Do not add explanations.

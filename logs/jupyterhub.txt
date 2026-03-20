@@ -1,0 +1,16 @@
+dataops-jupyterhub  | [I 2026-03-20 15:56:42.539 ServerApp] 200 GET /user/admin/lab/api/workspaces/default?1774033002535 (admin@138.68.11.125) 0.56ms
+dataops-jupyterhub  | [I 2026-03-20 15:56:42.548 ServerApp] 200 GET /user/admin/lab/api/settings/@jupyterlab/docmanager-extension:plugin?1774033002544 (admin@138.68.11.125) 1.51ms
+dataops-jupyterhub  | [I 2026-03-20 15:56:42.563 ServerApp] 200 GET /user/admin/lab/api/settings/@jupyterlab/notebook-extension:panel?1774033002558 (admin@138.68.11.125) 1.74ms
+dataops-jupyterhub  | [I 2026-03-20 15:56:42.566 ServerApp] 200 GET /user/admin/api/contents?content=1&hash=0&1774033002559 (admin@138.68.11.125) 2.05ms
+dataops-jupyterhub  | [I 2026-03-20 15:56:42.579 ServerApp] 200 GET /user/admin/lab/api/settings?ids_only=true&1774033002574 (admin@138.68.11.125) 2.70ms
+dataops-jupyterhub  | [I 2026-03-20 15:56:42.710 LabApp] Build is up to date
+dataops-jupyterhub  | [I 2026-03-20 15:56:42.711 ServerApp] 200 GET /user/admin/lab/api/build?1774033002428 (admin@138.68.11.125) 277.01ms
+dataops-jupyterhub  | [I 2026-03-20 15:56:43.587 ServerApp] 204 PUT /user/admin/lab/api/workspaces/default?1774033003574 (admin@138.68.11.125) 2.94ms
+dataops-jupyterhub  | [I 2026-03-20 15:56:43.607 ServerApp] 200 GET /user/admin/api/contents?content=1&hash=0&1774033003594 (admin@138.68.11.125) 5.20ms
+dataops-jupyterhub  | [I 2026-03-20 15:56:44.179 ServerApp] 204 PUT /user/admin/lab/api/workspaces/default?1774033004161 (admin@138.68.11.125) 3.08ms
+dataops-jupyterhub  | [I 2026-03-20 15:56:52.347 ServerApp] 200 GET /user/admin/api/kernels?1774033012329 (admin@138.68.11.125) 2.06ms
+dataops-jupyterhub  | [I 2026-03-20 15:56:52.349 ServerApp] 200 GET /user/admin/api/sessions?1774033012338 (admin@138.68.11.125) 1.48ms
+dataops-jupyterhub  | [I 2026-03-20 15:56:52.351 ServerApp] 200 GET /user/admin/lab/api/workspaces?1774033012340 (admin@138.68.11.125) 1.59ms
+dataops-jupyterhub  | [I 2026-03-20 15:56:52.353 ServerApp] 200 GET /user/admin/api/terminals?1774033012334 (admin@138.68.11.125) 1.12ms
+dataops-jupyterhub  | [I 2026-03-20 15:56:53.729 ServerApp] 200 GET /user/admin/api/contents?content=1&hash=0&1774033013711 (admin@138.68.11.125) 7.24ms
+dataops-jupyterhub  | [I 2026-03-20 15:56:54.353 ServerApp] 204 PUT /user/admin/lab/api/workspaces/default?1774033014335 (admin@138.68.11.125) 2.70ms

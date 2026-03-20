@@ -1,0 +1,51 @@
+dataops-minio  | INFO: Formatting 1st pool, 1 set(s), 1 drives per set.
+dataops-minio  | INFO: WARNING: Host local has more than 0 drives of set. A host failure will result in data becoming unavailable.
+dataops-minio  | MinIO Object Storage Server
+dataops-minio  | Copyright: 2015-2026 MinIO, Inc.
+dataops-minio  | License: GNU AGPLv3 - https://www.gnu.org/licenses/agpl-3.0.html
+dataops-minio  | Version: RELEASE.2025-09-07T16-13-09Z (go1.24.6 linux/arm64)
+dataops-minio  |
+dataops-minio  | API: http://172.21.0.3:9000  http://127.0.0.1:9000
+dataops-minio  | WebUI: http://172.21.0.3:9001 http://127.0.0.1:9001
+dataops-minio  |
+dataops-minio  | Docs: https://docs.min.io
+dataops-minio  | WARN: Detected default credentials 'minioadmin:minioadmin', we recommend that you change these values with 'MINIO_ROOT_USER' and 'MINIO_ROOT_PASSWORD' environment variables
+
+dataops-lakefs  | time="2026-03-20T15:35:52Z" level=info msg="lakeFS run" func=cmd/lakefs/cmd.init.func14 file="cmd/run.go:89" version=1.79.0
+dataops-lakefs  | time="2026-03-20T15:35:52Z" level=info msg="initialized Auth service" func=pkg/auth.NewBasicAuthService file="build/pkg/auth/basic_service.go:33" service=auth_service
+dataops-lakefs  | time="2026-03-20T15:35:52Z" level=info msg="initialize blockstore adapter" func=pkg/block/factory.BuildBlockAdapter file="build/pkg/block/factory/build.go:65" type=s3
+dataops-lakefs  | time="2026-03-20T15:35:52Z" level=info msg="initialized blockstore adapter" func=pkg/block/factory.buildS3Adapter file="build/pkg/block/factory/build.go:153" type=s3
+dataops-lakefs  | time="2026-03-20T15:35:52Z" level=info msg="initialize blockstore adapter" func=pkg/block/factory.BuildBlockAdapter file="build/pkg/block/factory/build.go:65" type=s3
+dataops-lakefs  | time="2026-03-20T15:35:52Z" level=info msg="initialized blockstore adapter" func=pkg/block/factory.buildS3Adapter file="build/pkg/block/factory/build.go:153" type=s3
+dataops-lakefs  | time="2026-03-20T15:35:52Z" level=info msg="Initialized local cache for committed data" func=pkg/pyramid.NewFS file="build/pkg/pyramid/tier_fs.go:84" cache_local_dir=/home/lakefs/lakefs/data/cache/meta-range cache_max_bytes=107374152 cache_name=meta-range disk_alloc_ratio=0.1 module=pyramid total_alloc_bytes=1073741524
+dataops-lakefs  | time="2026-03-20T15:35:52Z" level=info msg="Initialized local cache for committed data" func=pkg/pyramid.NewFS file="build/pkg/pyramid/tier_fs.go:84" cache_local_dir=/home/lakefs/lakefs/data/cache/range cache_max_bytes=966367641 cache_name=range disk_alloc_ratio=0.9 module=pyramid total_alloc_bytes=1073741524
+dataops-lakefs  | time="2026-03-20T15:35:52Z" level=info msg="initialize OpenAPI server" func=pkg/api.Serve file="build/pkg/api/serve.go:60" service=api_gateway
+dataops-lakefs  | time="2026-03-20T15:35:53Z" level=info msg="initialized S3 Gateway handler" func=pkg/gateway.NewHandler file="build/pkg/gateway/handler.go:133" s3_bare_domain="[s3.local.lakefs.io]" s3_region=us-east-1
+dataops-lakefs  | time="2026-03-20T15:35:53Z" level=info msg="starting HTTP server" func=cmd/lakefs/cmd.init.func14 file="cmd/run.go:323" listen_address="0.0.0.0:8000"
+dataops-lakefs  |
+dataops-lakefs  | lakeFS 1.79.0 - Up and running (^C to shutdown)...
+dataops-lakefs  |
+dataops-lakefs  |
+dataops-lakefs  |      ██╗      █████╗ ██╗  ██╗███████╗███████╗███████╗
+dataops-lakefs  |      ██║     ██╔══██╗██║ ██╔╝██╔════╝██╔════╝██╔════╝
+dataops-lakefs  |      ██║     ███████║█████╔╝ █████╗  █████╗  ███████╗
+dataops-lakefs  |      ██║     ██╔══██║██╔═██╗ ██╔══╝  ██╔══╝  ╚════██║
+dataops-lakefs  |      ███████╗██║  ██║██║  ██╗███████╗██║     ███████║
+dataops-lakefs  |      ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝     ╚══════╝
+dataops-lakefs  |
+dataops-lakefs  | │
+dataops-lakefs  | │ If you're running lakeFS locally for the first time,
+dataops-lakefs  | │     complete the setup process at http://127.0.0.1:8000/setup
+dataops-lakefs  | │
+dataops-lakefs  | │
+dataops-lakefs  | │ For more information on how to use lakeFS,
+dataops-lakefs  | │     check out the docs at https://docs.lakefs.io/quickstart/
+dataops-lakefs  | │
+dataops-lakefs  |
+dataops-lakefs  | │
+dataops-lakefs  | │ For support or any other question,                            >(.＿.)<
+dataops-lakefs  | │     join our Slack channel https://docs.lakefs.io/slack         (  )_
+dataops-lakefs  | │
+dataops-lakefs  |
+dataops-lakefs  | Version 1.79.0
+dataops-lakefs  | 

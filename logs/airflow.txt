@@ -1,0 +1,69 @@
+dataops-airflow-init  |
+dataops-airflow-init  | DB: postgresql+psycopg2://postgres:***@postgres:5432/airflow_db
+dataops-airflow-init  | Performing upgrade to the metadata database postgresql+psycopg2://postgres:***@postgres:5432/airflow_db
+dataops-airflow-init  | [2026-03-20T15:28:56.938+0000] {migration.py:207} INFO - Context impl PostgresqlImpl.
+dataops-airflow-init  | [2026-03-20T15:28:56.939+0000] {migration.py:210} INFO - Will assume transactional DDL.
+dataops-airflow-init  | [2026-03-20T15:28:56.940+0000] {migration.py:207} INFO - Context impl PostgresqlImpl.
+dataops-airflow-init  | [2026-03-20T15:28:56.940+0000] {migration.py:210} INFO - Will assume transactional DDL.
+dataops-airflow-init  | [2026-03-20T15:28:56.941+0000] {db.py:1675} INFO - Creating tables
+dataops-airflow-init  | INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+dataops-airflow-init  | INFO  [alembic.runtime.migration] Will assume transactional DDL.
+dataops-airflow-init  | INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+dataops-airflow-init  | INFO  [alembic.runtime.migration] Will assume transactional DDL.
+dataops-airflow-init  | Database migrating done!
+dataops-airflow-init  | /home/airflow/.local/lib/python3.11/site-packages/flask_limiter/extension.py:333 UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+dataops-airflow-init  | [2026-03-20T15:28:58.214+0000] {override.py:1508} INFO - Inserted Role: Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.215+0000] {override.py:965} WARNING - No user yet created, use flask fab command to do it.
+dataops-airflow-init  | [2026-03-20T15:28:58.226+0000] {override.py:1912} INFO - Created Permission View: can edit on Passwords
+dataops-airflow-init  | [2026-03-20T15:28:58.228+0000] {override.py:1963} INFO - Added Permission can edit on Passwords to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.229+0000] {override.py:1912} INFO - Created Permission View: can read on Passwords
+dataops-airflow-init  | [2026-03-20T15:28:58.231+0000] {override.py:1963} INFO - Added Permission can read on Passwords to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.234+0000] {override.py:1912} INFO - Created Permission View: can edit on My Password
+dataops-airflow-init  | [2026-03-20T15:28:58.235+0000] {override.py:1963} INFO - Added Permission can edit on My Password to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.237+0000] {override.py:1912} INFO - Created Permission View: can read on My Password
+dataops-airflow-init  | [2026-03-20T15:28:58.238+0000] {override.py:1963} INFO - Added Permission can read on My Password to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.241+0000] {override.py:1912} INFO - Created Permission View: can edit on My Profile
+dataops-airflow-init  | [2026-03-20T15:28:58.242+0000] {override.py:1963} INFO - Added Permission can edit on My Profile to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.244+0000] {override.py:1912} INFO - Created Permission View: can read on My Profile
+dataops-airflow-init  | [2026-03-20T15:28:58.245+0000] {override.py:1963} INFO - Added Permission can read on My Profile to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.254+0000] {override.py:1912} INFO - Created Permission View: can create on Users
+dataops-airflow-init  | [2026-03-20T15:28:58.255+0000] {override.py:1963} INFO - Added Permission can create on Users to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.256+0000] {override.py:1912} INFO - Created Permission View: can read on Users
+dataops-airflow-init  | [2026-03-20T15:28:58.257+0000] {override.py:1963} INFO - Added Permission can read on Users to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.259+0000] {override.py:1912} INFO - Created Permission View: can edit on Users
+dataops-airflow-init  | [2026-03-20T15:28:58.260+0000] {override.py:1963} INFO - Added Permission can edit on Users to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.262+0000] {override.py:1912} INFO - Created Permission View: can delete on Users
+dataops-airflow-init  | [2026-03-20T15:28:58.263+0000] {override.py:1963} INFO - Added Permission can delete on Users to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.266+0000] {override.py:1912} INFO - Created Permission View: menu access on List Users
+dataops-airflow-init  | [2026-03-20T15:28:58.267+0000] {override.py:1963} INFO - Added Permission menu access on List Users to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.270+0000] {override.py:1912} INFO - Created Permission View: menu access on Security
+dataops-airflow-init  | [2026-03-20T15:28:58.271+0000] {override.py:1963} INFO - Added Permission menu access on Security to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.278+0000] {override.py:1912} INFO - Created Permission View: can create on Roles
+dataops-airflow-init  | [2026-03-20T15:28:58.279+0000] {override.py:1963} INFO - Added Permission can create on Roles to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.281+0000] {override.py:1912} INFO - Created Permission View: can read on Roles
+dataops-airflow-init  | [2026-03-20T15:28:58.282+0000] {override.py:1963} INFO - Added Permission can read on Roles to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.284+0000] {override.py:1912} INFO - Created Permission View: can edit on Roles
+dataops-airflow-init  | [2026-03-20T15:28:58.285+0000] {override.py:1963} INFO - Added Permission can edit on Roles to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.287+0000] {override.py:1912} INFO - Created Permission View: can delete on Roles
+dataops-airflow-init  | [2026-03-20T15:28:58.288+0000] {override.py:1963} INFO - Added Permission can delete on Roles to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.292+0000] {override.py:1912} INFO - Created Permission View: menu access on List Roles
+dataops-airflow-init  | [2026-03-20T15:28:58.293+0000] {override.py:1963} INFO - Added Permission menu access on List Roles to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.300+0000] {override.py:1912} INFO - Created Permission View: can read on User Stats Chart
+dataops-airflow-init  | [2026-03-20T15:28:58.301+0000] {override.py:1963} INFO - Added Permission can read on User Stats Chart to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.303+0000] {override.py:1912} INFO - Created Permission View: menu access on User's Statistics
+dataops-airflow-init  | [2026-03-20T15:28:58.305+0000] {override.py:1963} INFO - Added Permission menu access on User's Statistics to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.312+0000] {override.py:1912} INFO - Created Permission View: can read on Permissions
+dataops-airflow-init  | [2026-03-20T15:28:58.313+0000] {override.py:1963} INFO - Added Permission can read on Permissions to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.316+0000] {override.py:1912} INFO - Created Permission View: menu access on Actions
+dataops-airflow-init  | [2026-03-20T15:28:58.317+0000] {override.py:1963} INFO - Added Permission menu access on Actions to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.324+0000] {override.py:1912} INFO - Created Permission View: can read on View Menus
+dataops-airflow-init  | [2026-03-20T15:28:58.326+0000] {override.py:1963} INFO - Added Permission can read on View Menus to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.328+0000] {override.py:1912} INFO - Created Permission View: menu access on Resources
+dataops-airflow-init  | [2026-03-20T15:28:58.330+0000] {override.py:1963} INFO - Added Permission menu access on Resources to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.337+0000] {override.py:1912} INFO - Created Permission View: can read on Permission Views
+dataops-airflow-init  | [2026-03-20T15:28:58.338+0000] {override.py:1963} INFO - Added Permission can read on Permission Views to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.341+0000] {override.py:1912} INFO - Created Permission View: menu access on Permission Pairs
+dataops-airflow-init  | [2026-03-20T15:28:58.343+0000] {override.py:1963} INFO - Added Permission menu access on Permission Pairs to role Admin
+dataops-airflow-init  | [2026-03-20T15:28:58.707+0000] {override.py:1597} INFO - Added user admin
+dataops-airflow-init  | User "admin" created with role "Admin"
+dataops-airflow-init exited with code 0

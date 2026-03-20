@@ -1,0 +1,5 @@
+Version: v1
+Name: sentiment-classifier
+Prompt:
+Classify the sentiment of the input text as positive, neutral, or negative.
+Return only one label.
